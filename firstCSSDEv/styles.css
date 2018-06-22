@@ -1,0 +1,320 @@
+
+/*################ Defaults ############ */
+nav, header, footer { /* similar to div, so new line after */
+	display: block;
+}
+
+body {
+	line-height: 1; /* puts space btw text */
+	margin: 0; /* sets everything edge to edge, default is a little bit of padding */
+}
+label {
+	font-size: 35px;
+	font-weight: 600;
+}
+p {
+	font-size: 22px;
+	line-height: 1.2;
+}
+article p {
+	font-size: 35px;
+	padding: 20px;
+}
+
+.container {
+	width: 100%;
+	margin: auto;
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+
+.row {
+	width: 100%;
+	display: flex; /* any el we put inside row that has flex
+	so it helps it change size with browser */
+	flex-wrap: wrap; /* As browser window gets smaller
+	content will wrap under eachother, or stack */
+	align-items: center; /* allowed by flex, centers 
+	all the content inside flex */
+}
+
+.row::after {
+	/* reset row to clear out content */
+	display: block;
+	clear: both;
+	/* removes any floats on any el so its not inherited on next row we create */
+	content: "";
+}
+
+.col-1 {
+	width: 8.33%;
+}
+
+.col-2 {
+	width: 16.66%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 33.33%;
+}
+.col-5 {
+	width: 41.66%;
+}
+.col-6{ 
+	width: 50%;
+}
+.col-7{
+	width: 58.33%;
+}
+.col-8 {
+	width: 66.66%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-10 {
+	width: 83.33%;
+}
+.col-ll {
+	width: 91.66%;
+}
+.col-12 {
+	width: 100%;
+	}
+* {
+	box-sizing: border-box;
+	/* makes it actual size */
+}
+/* ################## Nav bar ########### */
+nav {
+	width: 100%;
+	margin: 0; /* edge to edge, and takes up whole page*/
+}
+
+nav ul {
+	background-color: #eee;
+	overflow: hidden; /* when browser collapses, elements too big are hidden */
+	margin: 0;
+	padding: 0;
+}
+
+ul.topnav li {
+	list-style: none; /* assure it doesn't add bullet points */
+	float: left; /* takes them out of the norm, and lines them up left */
+
+}
+
+ul.topnav li.topnav-right {
+	float: right; /* want these links on right side */
+}
+
+ul.topnav li a {
+	display: block; /* good to do */
+	text-decoration: none; /* takes away underline */
+	font-size: 16px;
+	padding: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #666;
+}
+
+ul.topnav li a:hover {
+	background-color: #0080ff;
+	color: white;
+}
+
+ul.topnav li.dropdownIcon {
+	display: none;
+}
+
+
+/* ############## Custom Styles #########*/
+
+#section-1-gradient {
+	background: #076DFF; /*browsers that don't support gradient */
+
+	background: -webkit-linear-gradient(#076DFF,  #65a5ff);
+	/* chrome and safari */
+	background: -o-linear-gradient(#076DFF, #65a5ff);
+	/* opera */
+	background: -moz-linear-gradient(#076DFF,  #65a5ff);
+	/* firefox */
+	background: linear-gradient(#076DFF,  #65a5ff);
+	/* anything else */
+}
+div.box {
+	text-align: center; /* text el will inherit this */
+	margin: 24px;
+	padding: 36px 24px 40px 24px;
+	border-radius: 7px;
+	background-color: #fff;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.15),
+	0 2px 3px 0 rgba(0,0,0,0.1);
+/* horizontal, veertical, blur radius, spread radius, color 
+order of box-shadow */
+}
+
+div.slopeIcon img {
+	display: block;
+	margin: auto;
+	box-shadow: -2px -2px 20px 2px rgba(0,0,0,0.15),
+	2px 2px 7px 2px rgba(0,0,0,1);
+}
+
+button {
+	font-size: 32px;
+	font-weight: 700;
+	color: #fff;
+	background-color: #0069ff;
+	padding: 15px 60px; /* with only two
+	it does top and bottom 15px and left 
+	and right 60px */
+	display: block;
+	text-align: center;
+	margin: 5px;
+	border-radius: 7px;
+}
+button.learnMore {
+	display: block;
+	margin: auto;
+}
+.icon {
+	width: 100%; /* so it flexes with screen size */
+}
+div.leftSide-col {
+	margin-left: 30%;
+}
+
+div.rightSide-col {
+	margin-left: 15%;
+}
+
+h1.large {
+	color: #fff;
+	font-size: 56px;
+	margin: 0;
+	line-height: 70px; /* add space btw text */
+}
+
+h1.section2Header {
+	font-size: 65px;
+	text-align: center;
+}
+
+form h2 {
+	color: white;
+}
+
+input[type="text"] {
+	font-size: 20px;
+	width: 400px;
+	min-width: 100px; /* will never be less than 100px */
+	padding: 5px;
+	border-radius: 7px;
+}
+
+footer.footerHome {
+	background-color: #666;
+	padding-left: 10%;
+}
+
+footer.footerHome h1 {
+	color: #fff;
+	font-size: 35px;
+}
+
+footer.footerHome ul {
+	list-style: none;
+	text-align: left;
+	padding-left: 0;
+}
+
+footer.footerHome ul li {
+	color: #fff;
+	font-size: 22px;
+	line-height: 1.5;
+}
+
+
+/* ######### Mobile Styles ###### */
+@media  screen and (max-width: 680px) {
+	ul.topnav li:not(:nth-child(1)) {
+		display: none;
+	}
+	/* tells the browser to apply display none
+	to every li except for the nth-child(1), or the first one
+	so to the home li */
+
+	ul.topnav li.dropdownIcon {
+		display: block;
+		float: right;
+	}
+	ul.topnav.responsive li.dropdownIcon {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	ul.topnav.responsive {
+		position: relative;
+		/* so navbar doesn't move when it shifts */
+	}
+
+	ul.topnav.responsive li {
+		display: inline;
+		float: none;
+	}
+
+	ul.topnav.responsive li a {
+		display: block;
+		text-align: left;
+	}
+
+	h1.section2Header {
+		font-size: 50px;
+	}
+	article p {
+		font-size: 25px;
+	}
+	.col-6, .col-4, .col-5, .col-7 {
+		width: 100%;
+		margin: 0;
+	}
+
+	div.mobileStack {
+		width: 50%;
+		display: block;
+	}
+
+	div.box {
+		padding: 5px;
+		display: block;
+	}
+	div.slopeIcon {
+		margin: 10px;
+	}
+	div.slopeIcon img {
+		width: 100%;
+	}
+	div.leftSide-col, div.rightSide-col {
+		margin: 15px;
+	}
+
+	input[type="text"] {
+		width: 350px;
+	}
+
+	.videoContainer iframe {
+		position: relative; /* keep it in the same spot */
+		width: 100%;
+		margin: 0;
+		overflow: hidden;
+	}
+}
+
+
+
+
+
+

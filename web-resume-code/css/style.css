@@ -1,0 +1,728 @@
+
+* {
+	box-sizing: border-box;
+}
+
+
+#coming-soon {
+	margin-top: 150px;
+}
+/* HEADER STYLE */
+body {
+font-size: 16px;
+margin: 0px;
+background-color: #d9d9d9;
+}
+.image {
+	border: 3px solid black;
+}
+
+header {
+	z-index: 3;
+}
+header div {
+	background-color: none;
+	margin-bottom: 1px;
+}
+
+#nav {
+	float: right;
+	margin-top: 25px;
+}
+#nav button {
+	font-size: 20px;
+}
+#nav a {
+	font-size: 20px;
+}
+#logoImage {
+	border: 2px solid black;
+	margin-left: 15px;
+	padding: 5px;
+}
+
+#header-nav {
+	
+	z-index: 5;
+	background-color: transparent;
+	border: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	width: 100%;
+	
+}
+
+#header-nav:hover {
+	background-color: rgba(0,0,0, 0.3);
+
+}
+
+.btn-group button {
+	background-color: transparent;
+	color: white;
+}
+
+.btn-group button:hover {
+	background-color: white;
+	border-radius: 20px;
+}
+
+.btn-group a {
+	background-color: transparent;
+	color: white;
+	border: none;
+}
+
+.btn-group a:hover {
+	background-color: white;
+	border-radius: 20px;
+	color: black;
+}
+
+/* END HEADER STYLE */
+
+
+
+
+
+
+
+
+
+/* HOME SNIPPET STYLE */
+
+#backgroundImage {
+	position: relative;
+	margin-top: -121px;
+	z-index: 1;
+	margin-bottom: 0px;
+	
+	
+}
+#quote {
+	
+	margin-top: -200px;
+	text-align: center;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 75%;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.2);
+
+}
+#quote q {
+	color: white;
+	font-size: 30px;
+	margin-left: auto;
+	margin-right: auto;
+
+	
+}
+
+#quote p {
+	color: white;
+	font-size: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#skills {
+	
+	margin-top: 105px;
+	padding: 2px;
+	float: right;
+
+}
+#skillsImage {
+	border: 3px solid black;
+	max-width: 70%;
+	max-height: 70%;
+	border-radius: 100%;
+	float: left;
+	margin-left: 50px;
+}
+.text {
+	
+	text-align: center;
+	padding: 30px;
+
+}
+.skillText {
+	position: relative;
+	line-height: 40px;
+}
+
+#experiences {
+	float: right;
+	clear: both;
+	margin-top: 80px;
+}
+
+#education {
+	float: right;
+	clear: both;
+	margin-top: 80px;
+}
+
+#experienceImage {
+	border: 3px solid black;
+	float: right;
+	margin-right: 50px;
+	max-width: 70%;
+}
+
+#educationImage {
+	border: 3px solid black;
+	float: left;
+	margin-left: 50px;
+	border-radius: 100%;
+	max-width: 90%;
+
+}
+div.row hr {
+	width: 50%;
+	border: 2px solid black;
+
+}
+
+.expText {
+	line-height: 40px;
+
+}
+
+.eduText {
+	line-height: 40px;
+
+}
+ .exp {
+	position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 225px;
+  text-align: center;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+  margin-right: 100px;
+  
+}
+
+#resumeRow {
+	text-align: center;
+	margin-top: 200px;
+	border-top: 5px solid grey;
+	padding-bottom: 150px;
+	
+}
+#projectRow {
+	text-align: center;
+	background-color: white;
+	
+}
+#resumeTile {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	text-align: left;
+}
+
+#resumeImage {
+	border: 2px solid black;
+}
+
+#resumeImage:hover {
+	opacity: 0.5;
+}
+
+
+#resumeImage + span {
+  color: black;
+  visibility: hidden;
+
+}
+#resumeImage:hover + span {
+  visibility: visible;
+
+    
+}
+
+.res {
+	position: absolute;
+	text-align: center;
+  width: 200px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  bottom: 0;
+  left: 17%;
+  float: none;
+  
+  
+}
+#projectRow {
+	border: 5px solid black;
+	padding: 20px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+#projectOneImage, #projectTwoImage {
+	border: 2px solid black;
+	border-radius: 100%;
+	max-width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+#projectOneImage:hover, #projectTwoImage:hover {
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
+#projectTwoImage {
+	border: 2px solid black;
+	border-radius: 100%;
+	max-width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+}
+
+
+/* END HOME SNIPPET STYLES */
+
+
+
+
+
+
+
+
+
+
+
+
+/* BEGIN FINANCIAL SNIPPTE */
+
+
+
+#fullResumeRow {
+	padding-top: 150px;
+	margin-bottom: -150px;
+}
+
+
+#fullResumeImage {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* END FINANCIAL SNIPPET */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BEGIN SKILLS SNIPPET STYLE */
+
+#programmingHead {
+	
+	
+}
+div.col-sm-3 h3 {
+	margin-left: 43%;
+}
+
+#programmingHead p {
+	float: left;
+	margin-left: 10%;
+}
+
+div div #first {
+	margin-left: 15%;
+}
+#programmingBody {
+	
+}
+#HTML {
+	color: green;
+
+}
+
+#innerHTML {
+	border: 5px solid black;
+	width: 59%;
+	background-color: black;
+	margin-left: 10%;
+}
+
+#CSS {
+	color: green;
+	margin-top: 20px;
+}
+
+#innerCSS {
+	border: 5px solid black;
+	width: 45%;
+	background-color: black;
+	margin-left: 10%;
+}
+
+#JS {
+color: green;
+margin-top: 20px;
+}
+
+#innerJS {
+	border: 5px solid black;
+	width: 25%;
+	background-color: black;
+	margin-left: 10%;
+}
+
+#CPLUS {
+color: green;
+margin-top: 20px;
+}
+
+#innerCPLUS {
+	border: 5px solid black;
+	width: 30%;
+	background-color: black;
+	margin-left: 10%;
+}
+
+
+/* adjust the responsive to change the float margin-left 
+of the headers beginner, ... so it doesn't adjust off the line and offest
+*/
+
+
+
+/* END SKILLS SNIPPET STYLE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BEGIN FOOTER STYLES */
+
+#contactInfo {
+	text-align: center;
+	
+}
+.panel-footer {
+	margin-top: 200px;
+	text-align: center;
+	background-color: white;
+	border: 2px solid black;
+}
+#links {
+	text-align: center;
+}
+
+/* END FOOTER STYLES */
+
+
+
+
+
+
+
+
+
+
+
+
+/* STYLE by MEDIA structure --> Biggest to Smallest */
+@media (min-width: 1200px) {
+	#skillsImage {
+		margin-top: 58px;
+	}
+	.text {
+		margin-top: 58px;
+	}
+}
+@media (min-width: 1077px) and (max-width: 1199px) {
+	#skillsImage {
+		margin-top: 60px;
+	}
+	.text {
+		margin-top: 60px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.exp {
+		margin-right: 70px;
+	}
+/* Responsive Skill Media */
+
+
+#programmingHead p {
+	float: left;
+	margin-left: 7%;
+}
+
+div div #first {
+	margin-left: 15%;
+}
+
+
+/* End responsive skill media */
+
+
+	
+}
+@media (max-width: 767px) {
+	#logoImage {
+		display: none;
+	}
+	#nav button {
+	font-size: 17px;
+}
+#quote {
+	
+	margin-top: -125px;
+	text-align: center;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 75%;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.2);
+
+}
+#quote q {
+	color: white;
+	font-size: 15px;
+	margin-left: auto;
+	margin-right: auto;
+
+	
+}
+
+#quote p {
+	color: white;
+	font-size: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#skillsImage {
+	border: 3px solid black;
+	max-width: 50%;
+	max-height: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.text {
+	margin-top: 50px;
+}
+
+#skillsImage {
+	margin-left: 23%;
+}
+#experienceImage {
+	margin-right: 29%;
+}
+
+#educationImage {
+	margin-left: 18%;
+}
+
+#expText {
+
+}
+
+#experienceImage {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	
+
+}
+
+.expDivText {
+	
+	position: relative;
+	margin-top: 300px;
+}
+
+.expDivImage {
+	position: relative;
+	margin-top: -550px;
+	
+}
+
+.exp {
+	margin-right: 30%;
+	font-size: 1em;
+	width: 200px;
+	
+}
+
+#resumeImage {
+	
+	max-width: 35%;
+	float: none;
+	margin-left: 30%;
+	
+}
+.res {
+	position: absolute;
+	text-align: center;
+  width: 150px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #fff;
+  bottom: 0;
+  left: 36%;
+  float: none;
+  
+  
+}
+
+#projectOneImage {
+	margin-top: 50px;
+	max-width: 40%;
+}
+
+
+#projectTwoImage {
+	margin-top: 120px;
+	max-width: 50%;
+}
+
+#fullResumeRow {
+	padding-top: 100px;
+	margin-bottom: -150px;
+}
+
+/* Responsive Skill Media */
+
+
+div div #first {
+	margin-left: 10%;
+}
+
+
+div.col-sm-3 h3 {
+	margin-left: 0%;
+	font-size: 20px;
+}
+#innerHTML, #innerCSS, #innerJS, #innerCPLUS, #programmingHead p {
+	margin-left: 5%;
+}
+
+
+/* End responsive skill media */
+
+
+}
+
+@media (max-width: 650px) {
+			#quote {
+	
+	display: none;
+
+}
+#quote q {
+	display: none;
+
+	
+}
+
+#quote p {
+	display: none;
+}
+#skillsImage {
+	border: 3px solid black;
+	max-width: 60%;
+	max-height: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -80px;
+}
+#skillsImage {
+	margin-left: 21%;
+}
+#experienceImage {
+	margin-right: 15%;
+}
+
+#educationImage {
+	margin-left: 7%;
+}
+
+
+}
+@media (max-width: 479px) {
+
+.res {
+	position: absolute;
+	text-align: center;
+  width: 100px;
+  font-size: 0.5em;
+  text-transform: uppercase;
+  color: #fff;
+  bottom: 0;
+  left: 37%;
+  float: none;
+}
+  #innerHTML, #innerCSS, #innerJS, #innerCPLUS, #programmingHead p {
+	margin-left: 3%;
+}
+
+  
+
+}
+
+/* END MEDIA STYLES */
+
+
+
+
+
+
+
+
+

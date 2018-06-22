@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>My Css Website</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<nav>
+		<ul class="topnav" id="dropdownClick">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">About</a></li>
+			<li class="topnav-right"><a href="#signup">Sign Up</a></li>
+			<li class="topnav-right"><a href="#signin">Sign In</a></li>
+			<li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+		</ul>
+	</nav>
+
+	<div class="container" id="section-1-gradient">
+		<div class="row">
+			<div class="col-6">
+				<div class="leftSide-col">
+					<h1 class="large">Crazy Radness</h1>
+					<h1 class="large">Made for Developers</h1>
+				</div>
+
+				<form>
+					<div class="leftSide-col">
+						<h2>Username</h2>
+						<input class="inputbox" name="username" type="text" placeholder="Username">
+						<h2>Password</h2>
+						<input class="inputbox" name="password" type="text" placeholder="Password">
+					</div>
+				</form>
+			</div>
+
+			<div class="col-6">
+				<div class="rightSide-col">
+					<div class="videoContainer">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/rYeSA1vgIUE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end first part -->
+
+	<header> <!-- acts like a container -->
+		<h1 class="section2Header">The Standards of Awesomeness</h1>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<div class="box">
+					<div class="icon">
+						<img src="devIcon.png">
+					</div>
+					<label>
+						Chat with Me
+						<!-- stacks itself 
+							underneath because it works like a div tag -->
+					</label>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. 
+					</p>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="box">
+					<div class="icon">
+						<img src="devIcon.png">
+					</div>
+					<label>
+						Learn to Code
+						<!-- stacks itself 
+							underneath because it works like a div tag -->
+					</label>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. 
+					</p>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="box">
+					<div class="icon">
+						<img src="devIcon.png">
+					</div>
+					<label>
+						Build an Empire
+						<!-- stacks itself 
+							underneath because it works like a div tag -->
+					</label>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. 
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<button class="learnMore">
+					Learn More
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="container">
+	<div class="row">
+		<div class="col-7">
+			<article> <!-- blog post, comment, news article...-->
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				</p>
+			</article>
+		</div>
+		<div class="col-5">
+			<div class="slopeIcon">
+				<img src="iOS_Slope.png">
+			</div>
+		</div>
+	</div>
+	</div>
+	<footer class="footerHome">
+		<div class="row">
+			<div class="col-3 mobileStack">
+				<h1>Company</h1>
+				<ul>
+					<li>About</li>
+					<li>Blog</li>
+					<li>Careers</li>
+				</ul>
+			</div>
+			<div class="col-3 mobileStack">
+				<h1>Company</h1>
+				<ul>
+					<li>About</li>
+					<li>Blog</li>
+					<li>Careers</li>
+				</ul>
+			</div>
+			<div class="col-3 mobileStack">
+				<h1>Company</h1>
+				<ul>
+					<li>About</li>
+					<li>Blog</li>
+					<li>Careers</li>
+				</ul>
+			</div>
+			<div class="col-3 mobileStack">
+				<h1>Company</h1>
+				<ul>
+					<li>About</li>
+					<li>Blog</li>
+					<li>Careers</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+
+<script src="index.js"></script>
+
+</body>
+
+</html>
